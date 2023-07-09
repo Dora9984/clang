@@ -35,5 +35,10 @@ int main(void)
         printf("%d번째 : %.20f\n", i, err_num);
     }
 
+    char cnum = 128; // char 형의 최대값은 127이다.
+    unsigned char u_cnum = 255; // 0 ~ 255
+    short snum = 32768; // short형의 최대값은 32767이다.
+    unsigned short u_snum = 32768;
+
     return 0;
 }
