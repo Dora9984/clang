@@ -1,46 +1,52 @@
 /*
-íŒŒì¼ëª…: ex04-02-scanf.c
+ÆÄÀÏ¸í: ex04-02-scanf.c
 scanf()
-    ë°ì´í„° ì…ë ¥ì— ì‚¬ìš©ë˜ëŠ” í•¨ìˆ˜
+    µ¥ÀÌÅÍ ÀÔ·Â¿¡ »ç¿ëµÇ´Â ÇÔ¼ö
 */
 
-// Visual Studio ì‚¬ìš©ì‹œ
+// Visual Studio »ç¿ë½Ã
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
 {
+    /*
     char character;
     int inum;
     float fnum;
 
     scanf("%c", &character);
     scanf("%d", &inum);
-    scanf("%f", &fnum);
+    scanf("%f", &fnum);  // »ç¿ëÀÚ°¡ µ¥ÀÌÅÍ¸¦ ÀÔ·ÂÇÒ ¼ö ÀÖ´Â ÇÔ¼ö
     printf("%c, %d, %f \n", character, inum, fnum);
 
+    */
 
-   /*
+  /*
    int num1, num2, num3;
    float fnum1, fnum2;
-   printf("ì„¸ ê°œì˜ ì •ìˆ˜ ì…ë ¥: ");
+   printf("¼¼ °³ÀÇ Á¤¼ö ÀÔ·Â: ");
    scanf("%d %d %d", &num1, &num2, &num3);
-   printf("ì…ë ¥ëœ ì •ìˆ˜ë“¤: %d %d %d \n", num1, num2, num3);
+   printf("ÀÔ·ÂµÈ Á¤¼öµé: %d %d %d \n", num1, num2, num3);
    */
 
     /*
     int num1, num2, num3;
     float fnum1, fnum2;
-    printf("ì‹¤ìˆ˜, ì •ìˆ˜, ì‹¤ìˆ˜ ì°¨ë¡€ëŒ€ë¡œ ì…ë ¥: ");
+    printf("½Ç¼ö, Á¤¼ö, ½Ç¼ö Â÷·Ê´ë·Î ÀÔ·Â: ");
     scanf("%f %d %f", &fnum1, &num1, &fnum2);
-    printf("ì…ë ¥ëœ ê°’ë“¤: %f %d %f", fnum1, num1, fnum2);
+    printf("ÀÔ·ÂµÈ °ªµé: %f %d %f", fnum1, num1, fnum2);
     */
-   
-    int num1, num2, num3;
+
+
+   /* int num1, num2, num3;
     float fnum1, fnum2;
-    printf("ì„¸ ê°œì˜ ì •ìˆ˜ ì…ë ¥: ");
+    printf("¼¼ °³ÀÇ Á¤¼ö ÀÔ·Â: ");
     scanf("%o %x %d", &num1, &num2, &num3);
-    printf("ì…ë ¥ëœ ê°’ë“¤: %d %d %d", num1, num2, num3);
+    printf("ÀÔ·ÂµÈ °ªµé: %d %d %d", num1, num2, num3);
+
+    */
 
     return 0;
 }
+
