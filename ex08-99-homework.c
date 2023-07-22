@@ -41,34 +41,60 @@
   *****   5   j > 4  -> i+j > 9
    ****   6   j > 3  -> i+j > 9
 
+           i     j 
+*******    0   j < 3
+*******    1   j < 2
+*******    2   j < 1
+*******    3
+*******    4
+*******    5
+*******    6
+
 */
 
 #include <stdio.h>
 
 int main(void)
-{
-    for (int i = 0; i < 7; i++)
+{ // 4번 마름모(수업에서)
+    for(int i = 0; i < 7; i++)
     {
-        /*
-        i = 0
-        j = 0
-        조건 0 < 1 ...
-        
-        0 *
-        1 **
-        2 ***
-        3 ****
-        4 *****
-        5 ******
-        6 *******
-        */
+        for(int j = 0; j < 7; j++)
+        {
+            if(i < 7/2+1) {
+                if(j < 3-i) {
+                    printf(" ");
+                } else if(j > 3+i) {
+                    printf(" ");
+                } else {
+                    printf("*");
+                }
+            } else {
+                if(j < i-3) {
+                    printf(" ");
+                } else if(i+j > 9) {
+                    printf(" ");
+                } else {
+                    printf("*");
+                }
+            }
+        }
+        printf("\n");        
+    }
+printf("\n");
 
-        for (int j= 0; j < i+1; j++)
-        { 
-            printf("*");
+//2번(혼자함ㅎ)
+    for (int k = 0; k < 4; k++)
+    {
+        for (int l = 0; l < 4; l++)
+        {
+            if (l < 3-k) {
+                printf(" ");}
+            else {
+                printf("*");}
         }
         printf("\n");
     }
-
+            
+        
     return 0;
 }
