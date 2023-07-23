@@ -49,9 +49,74 @@ for (i = 0; i < 7; i++)
 {
     for (j = 0; j < 7; j++)
     {
+        if ((i + j) < 1)
+        {
         printf("%d ", eun[i][j]);
-    }
+        printf("\n");
+        }
+
+        else if (0 < (i + j) < 2)
+        {
+        printf("%d ", eun[i][j]); 
+        }
+
+        else if (i + j == 2)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 3)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 4)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 5)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 6)
+        {
+        printf("%d ", eun[i][j]); 
+        }
+
+        else if (i + j == 7)
+        {
+        printf("%d ", eun[i][j]);
+        }
+
+        else if (i + j == 8)
+        {
+        printf("%d ", eun[i][j]);
+        }
+
+        else if (i + j == 9)
+        {
+        printf("%d ", eun[i][j]);
+        }
+
+        else if (i + j == 10)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 11)
+        {
+        printf("%d ", eun[i][j]);  
+        }
+
+        else if (i + j == 12)
+        {
+        printf("%d ", eun[i][j]);
+        }
     printf("\n");
+    }
+
 }
 
 return 0;
