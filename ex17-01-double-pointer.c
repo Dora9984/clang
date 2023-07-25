@@ -22,8 +22,8 @@ int main(void)
 
     printf("%p %p\n", ptr1, dptr);
     printf("%d %d\n", num, **dptr);
-    ptr2 = *dptr;
-    *ptr2 = 9;
+    ptr2 = *dptr; // ptr2 = ptr1 = &num
+    *ptr2 = 9; // num =9
 
     printf("%d %d\n", num, **dptr);
 
